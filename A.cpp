@@ -2,10 +2,11 @@
 
 using namespace std;
 
-typedef long long ll;
-typedef long double ld;
-typedef unsigned long long ull;
-typedef string str;
+#define ll long long
+#define ld long double
+#define ull unsigned long long
+#define uld unsigned long double
+#define str string
 
 const ll mod = 1e9 + 7;
 const ll oo = 1e18;
