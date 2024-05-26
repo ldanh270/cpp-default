@@ -13,7 +13,39 @@ const ll oo = 1e18;
 const ll N = 1e5;
 const ll AI = 1e6;
 
+str s;
+
+ll check(ll i) {
+    if (s[i + 1] == 'D') {
+        if (s[i + 2] == 'D') {
+            return 2;
+        }
+        return 1;
+    }
+    return 0;
+}
+
 void solve() {
+    ll i = 0;
+    cin >> s;
+    while (i < s.size()) {
+        if (s[i] == 'F') {
+            if (check(i) == 0) {
+                i++;
+            }
+            else if (check(i) == 1) {
+                i += 2;
+            }
+            else if (check(i) == 2) {
+                i += 3;
+            }
+        }
+        else {
+            cout << "No" << endl;
+            return;
+        }
+    }
+    cout << "Yes" << endl;
 }
 
 int main() {
