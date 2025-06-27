@@ -14,6 +14,7 @@ const ll N = 1e5;
 const ll AI = 1e6;
 
 void solve() {
+    cout << "Hlw";
 }
 
 int main() {
